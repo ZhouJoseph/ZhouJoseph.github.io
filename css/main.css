@@ -1,0 +1,108 @@
+/*!
+ * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+
+.cover-container {
+
+    width: 80%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+
+}
+
+.header{
+  margin-top: 15%;
+  font-size: 25px;
+}
+.header p {
+  font-size: 15px;
+}
+
+.sec-header{
+  margin-top: 10%;
+  font-size: 25px;
+}
+
+.sec-header p {
+  font-size: 15px;
+}
+.social-icons a {
+  margin-top: 1rem;
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-right: 1rem;
+}
+
+@-webkit-keyframes opac{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes opac {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.card-img-top{
+  height: 180px;
+}
+.blk-as-all{
+  animation-name: opac;
+  animation-duration: 3s;
+  -webkit-animation-name: opac; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #525288;
+}
+
+.sec-header a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#81b3d2;
+}
+a:hover{
+  color:#d73444;
+}
+
+.sec-header a:before, a:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+
+.card{
+  display: inline-block;
+}
+
+form{
+  display: inline-block;
+}
+button{
+  width: 150px;
+  font-size: 20px;
+  height: 40px;
+}
+
+
+
