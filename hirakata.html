@@ -203,6 +203,30 @@ $('body').on('keydown', 'input, select', function(e) {
         }
         if (next.length) {
             next.focus();
+        } else {
+            form.find("input").eq(0).focus();
+        }
+        return false;
+    }
+    // left
+    if (e.keyCode === 37){
+        var self = $(this), form = self.parents('form:eq(0)'), focusable, previous, index;
+        focusable = form.find('input').filter(':visible');
+        index = focusable.index(this);
+        previous = focusable.eq(index-1);
+        if (previous.length) {
+            previous.focus();
+        } 
+        return false;
+    }
+    // right
+    if (e.keyCode === 39){
+        var self = $(this), form = self.parents('form:eq(0)'), focusable, next, index;
+        focusable = form.find('input').filter(':visible');
+        index = focusable.index(this);
+        next = focusable.eq(index+1);
+        if (next.length) {
+            next.focus();
         } 
         return false;
     }
