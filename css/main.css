@@ -66,6 +66,7 @@
   animation-duration: 3s;
   -webkit-animation-name: opac; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 3s;
+  margin-top: -10%;
 }
 
 .social-icons a:last-child {
